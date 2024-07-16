@@ -1,0 +1,149 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    width:auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.top svg{
+    height: 30px;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 60px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content .allcards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.content .card{
+    height: 170px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #f1f1ff;
+    position: relative;
+}
+
+.card svg {
+    height : 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+
+}
+
+span{
+    background: linear-gradient(45deg, #e66465, #9198e5);
+}
+
+.output{
+    padding: 0 50px;
+    font-size: large;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+    font-weight: bold;
+    padding: 50px 30px 10px 30px;
+}
+
+.answer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+    padding: 0px 50px;
+    text-align: justify;
+}
+
+
+.loader hr{
+    border-radius: 20px;
+    background-color: #f1f1ff;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    height: 20px;
+    border: none;
+    width: 900px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0%{
+        background-position: -900px;
+    }
+    100%{
+        background-position: 900px;
+    }
+}
+
+.output svg {
+    height: 25px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width:100vw;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    background-color: #f1f1ff;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.box svg{
+    height: 20px;
+}

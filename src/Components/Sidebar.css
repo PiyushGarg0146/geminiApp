@@ -1,0 +1,52 @@
+.sidebar{
+    background-color: #f1f1ff;
+    min-height: 100vh;
+    min-width: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    padding: 0px 20px; 
+}
+
+.open svg{
+    height: 25px;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+.recent button{
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #e7e7f7;
+    border: none;
+    cursor: pointer;
+    color: rgba(137, 137, 137, 0.863);
+}
+
+.recent svg{
+    height: 30px;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.options, .answer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.options svg{
+    height: 30px;
+    
+}
